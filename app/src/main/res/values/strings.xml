@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GistReader</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="no_connection_to_host">Problem with Connection to Host Server</string>
+    <string name="server_error">Server Error</string>
+    <string name="sync_gists">Syncing Gists</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_wait">Please wait a few moments.</string>
+    <string name="title_activity_gists">Gist List</string>
+    <string name="no_items_display">Nothing available to display.</string>
+    <string name="title_activity_gist_details">Gist Details</string>
+    <string name="star">Star</string>
+    <string name="unstar">Unstar</string>
+    <string name="delete">Delete</string>
+</resources>

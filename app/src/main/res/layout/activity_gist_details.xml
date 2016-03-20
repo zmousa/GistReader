@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fragments_background"
+    >
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/buttonholder">
+
+            <Button
+                android:id="@+id/star_button"
+                android:text="@string/star"
+                style="@style/NormalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textSize="16dp"
+                android:layout_weight="1"      />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:text="@string/delete"
+                style="@style/NormalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textSize="16dp"
+                android:layout_weight="1"      />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gist_title_text"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="1dp"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:text="Test" />
+            <LinearLayout
+                android:id="@+id/linearScroll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView android:id="@+id/survey_fragment_scroll_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="false">
+                    <TextView
+                        android:id="@+id/gist_response_text"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="10dp"
+                        android:text="Test" />
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
